@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV </title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>OPENCV</h1>
+        <!-- TEXTE COMPLET INTACT - AUCUNE MODIFICATION -->
+        
+        <h1>Présentation générale d’OPENCV</h1>
+        
+        <p>Initialement développée par Intel, OpenCV (Open Computer Vision) est une bibliothèque graphique. Elle est spécialisée dans le traitement d’images, que ce soit pour de la photo ou de la vidéo.</p>
+        
+        <p>Sa première version est sortie en juin 2000. Elle est disponible sur la plupart des systèmes d’exploitation et existe pour les langages Python, C++ et Java. <br>
+        Sous licence BSD (Berkeley Software Distribution Licence), OpenCV peut être réutilisé librement, en tout ou partie, pour être intégré au sein d’un autre projet.</p>
+        
+        <p>C’est notament cette notion qui fait qu’OpenCV est très populaire et à la base de nombreux logiciels de traitements d’images/vidéos. Elle est aujourd’hui développée, maintenue, documentée et utilisée par une communauté de plus de 40 000 membres actifs !</p>
+        
+        <!-- EMPLACEMENT IMAGE 1 - Illustration générale -->
+        <div class="image-placeholder">
+            <div class="image-note"><img src="Capture d'écran 2026-03-17 192947.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"> </div>
+        </div>
+        
+        <h2>Les traitements d’images</h2>
+        
+        <p>Les algorithmes d’OpenCV permettent d’appliquer divers traitements sur les images pour faciliter la détection d’éléments précis dans celles-ci. Voici quelques exemples :</p>
+        
+        <h3>Le Tresholding (seuillage) d’une image permet de définir une valeur de pixel (correspondant à une couleur) qui servira de seuil. Au-dessus ou en dessous de cette valeur (selon l’agorithme), tous les pixels se verront assigner une autre valeur. Il existe 4 algorithmes de Tresholding.</h3>
+        
+        <!-- EMPLACEMENT IMAGE 2 - Thresholding -->
+        <div class="image-placeholder">
+            
+            <div class="image-note"><img src="Capture d'écran 2026-03-17 192121.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></div>
+            <div class="image-note"><img src="image.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></div>
+
+        </div>
+        
+        <h3>Les filtres de lissage, permettant de réduire le bruit (1) d’une image. Parmi eux, nous avons notamment les filtres par convolution, se basant sur les pixels voisins pour faire une moyenne.</h3>
+        
+        <!-- EMPLACEMENT IMAGE 3 - Filtres de lissage -->
+        <div class="image-placeholder">
+            
+            <div class="image-note"><img src="Capture d'écran 2026-03-17 194032.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></div>
+                        <div class="image-note"><img src="Capture d'écran 2026-03-17 194154.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></div>
+        </div>
+        
+        <h3>Les filtres morphologiques permettant, sur une image binaire (uniquement noire et blanche avec le fond en noir et l’objet sur lequel on effectue le traitement en blanc) d’appliquer une érosion ou dilatation, c’est-à-dire affiner l’objet pour l’érosion et l’élargir pour la dilatation. | Image de base | Après application de l’érosion | Après application de la dilatation</h3>
+        
+        <!-- GRILLE POUR LES 3 IMAGES DES FILTRES MORPHOLOGIQUES -->
+        <div class="morph-grid">
+            <div class="morph-item">
+                <p><strong>Image de base</strong></p>
+                <div class="image-placeholder" style="margin:10px 0;">
+                    <p><img src="morphological_1_cff7ce45eb.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></p>
+                    
+                     
+                </div>
+                <div class="image-note">base.png</div>
+            </div>
+            <div class="morph-item">
+                <p><strong>Après application de l’érosion</strong></p>
+                <div class="image-placeholder" style="margin:10px 0;">
+                     <p><img src="morphological_erosion_fad6235b1f.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></p>
+                </div>
+                <div class="image-note">erosion.png</div>
+            </div>
+            <div class="morph-item">
+                <p><strong>Après application de la dilatation</strong></p>
+                <div class="image-placeholder" style="margin:10px 0;">
+                     <p><img src="morphological_erosion_fad6235b1f.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></p>
+                </div>
+                <div class="image-note">dilatation.png</div>
+            </div>
+        </div>
+        
+        <p>Il est possible de combiner l’érosion et la dilatation pour la suppression de bruit dans une image. L’application de l’érosion puis dilatation est appelé Opening (Ouverture) et l’application de la dilatation puis de l’érosion est appelé Closing (Fermeture)</p>
+        
+        <h3>Certains algorithmes d’OpenCV utilisent de l’intelligence artificielle pour faciliter le traitement des images. Dans les faits, cette IA sert à améliorer les algorithmes précédemment détaillés pour obtenir des résultats plus précis</h3>
+        
+        <!-- EMPLACEMENT IMAGE 4 - Intelligence artificielle -->
+        <div class="image-placeholder">
+          
+            <div class="image-note"><img src="morphological_dilatation_a8009cef6f.png" alt="Description de l'image" style="width:100%; border-radius:16px; margin:20px 0;"></div>
+        </div>
+        
+        <!-- CONCLUSION AJOUTÉE ICI -->
+        <div class="conclusion">
+            <h3>En conclusion</h3>
+            <p>OpenCV s'impose aujourd'hui comme la bibliothèque de référence pour le traitement d'images et la vision par ordinateur. Sa licence BSD permissive, sa grande communauté et sa polyvalence en font un outil incontournable aussi bien pour les projets académiques que pour les applications industrielles.</p>
+            <p>Des startups comme Axopen aux géants de la tech, en passant par les systèmes d'arbitrage vidéo ou les technologies émergentes comme le deepfake, OpenCV démontre chaque jour sa capacité à s'adapter aux défis technologiques les plus variés.</p>
+            <p>Que ce soit pour le seuillage, le lissage, les opérations morphologiques ou l'intégration d'IA, OpenCV continue d'évoluer grâce à sa communauté active de plus de 40 000 membres, promettant encore de nombreuses innovations dans le domaine de la vision par ordinateur.</p>
+            <div class="signature">— Traitement d'images, vision par ordinateur et innovation</div>
+        </div>
+        
+    </div>
+</body>
+</html>
